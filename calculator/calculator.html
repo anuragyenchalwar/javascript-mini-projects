@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+
+  <p class="js-calculation calculation"></p>
+  <p>
+    <button onclick="
+    updateCalculation('1');
+   " class="calculation-button grey-button">1</button>
+
+  <button onclick="
+ updateCalculation('2');
+  " class="calculation-button grey-button">2</button>
+
+  <button onclick="
+ updateCalculation('3');
+  "class="calculation-button grey-button">3</button>
+
+  <button onclick="
+  updateCalculation('+');
+  " class="calculation-button orange-button">+</button>
+
+  </p>
+
+  <p>
+    <button onclick="
+   updateCalculation('4');
+    "class="calculation-button grey-button">4</button>
+
+  <button onclick="
+ updateCalculation('5');
+  "class="calculation-button grey-button">5</button>
+
+  <button onclick="
+  updateCalculation('6');
+  "class="calculation-button grey-button">6</button>
+
+  <button onclick="
+  updateCalculation('-');
+  " class="calculation-button orange-button">-</button>
+
+  </p>
+
+  <p>
+    <button onclick="
+    updateCalculation('7');
+    "class="calculation-button grey-button">7</button>
+
+  <button onclick="
+ updateCalculation('8');
+  "class="calculation-button grey-button">8</button>
+
+  <button onclick="
+ updateCalculation('9');
+  "class="calculation-button grey-button">9</button>
+
+  <button onclick="
+ updateCalculation('*');
+  " class="calculation-button orange-button">*</button>
+
+  </p>
+
+  <p>
+    <button onclick="
+    updateCalculation('0');
+    "class="calculation-button grey-button">0</button>
+
+  <button onclick="
+  updateCalculation('.');
+  "class="calculation-button grey-button">.</button>
+
+<button onclick="
+eval(calculation);//eval(...) : Converts the string into acctual math.
+calculation = eval(calculation);
+displayCalculation();
+" class="calculation-button grey-button">=</button>
+
+  <button onclick="
+  calculation += '/';
+  console.log(calculation);
+  "  class="calculation-button orange-button">/</button>
+
+  </p>
+  <p>
+    <button onclick="
+      calculation='';
+      displayCalculation();
+      
+      localStorage.setItem('calculation',calculation);
+      
+      
+      " class="calculation-button clear-button">Clear</button>
+  </p>
+ 
+  
+ 
+
+  <script src="calculator.js"></script>
+</body>
+</html>
