@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>coin flip game</title>
+</head>
+
+<body>
+
+    <button onclick="
+        guess = `Head`;
+        if(randomNumber < 1/2){
+            result = `Head`;
+        }else{
+            result = `Tail`;
+        } 
+        alert(result === guess ? alert(`You choose Head. And it is: ${result}. You Win!`) : `It is ${result}. You Loose`);
+    ">Head</button>
+
+    <button onclick="
+        guess = `Tail`;
+        if(randomNumber > 1/2){
+            result = `Tail`;
+        }else{
+            result = `Head`
+            } 
+        alert(result === guess ? alert(`You choose Tail. And it is: ${result}. You Win!`) : `It is ${result}. You Loose`);
+    ">Tail</button>
+
+    <script>
+        let randomNumber = Math.random();
+        let result = ``;
+
+    </script>
+</body>
+
+</html>
